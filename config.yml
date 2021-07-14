@@ -1,0 +1,16 @@
+title: let me day day up
+description: just test
+template:
+  repo: let-me-day-day-up-template
+  name: let-me-day-day-up
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
